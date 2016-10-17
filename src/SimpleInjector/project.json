@@ -1,12 +1,15 @@
 {
-  "version": "3.3.0",
+  "version": "3.3.0-beta5",
+  "name" : "SimpleInjector",
   "buildOptions": {
     "keyFile": "../SimpleInjector.snk",
     "define": [ "PCL", "NETSTANDARD" ],
-    "xmlDoc": true
+    "xmlDoc": false
   },
 
   "frameworks": {
+    "net451" : {},
+    "net46" : {},
     "netstandard1.0": {
       "buildOptions": {
         "defines": [ "PCL", "NETSTANDARD" ]

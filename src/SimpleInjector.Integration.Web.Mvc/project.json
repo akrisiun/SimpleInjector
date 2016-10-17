@@ -1,0 +1,43 @@
+{
+  "version": "3.3.0-beta5",
+  "name" : "SimpleInjector.Integration.Web.Mvc",
+  "buildOptions": {
+    "keyFile": "../SimpleInjector.snk",
+    "define": [ "NET45", "NETSTANDARD" ],
+    "xmlDoc": false
+  },
+  "libraries": {
+    "SimpleInjector/3.3.0-beta5": {
+      "type": "project",
+      "path": "../SimpleInjector/project.json"
+    },
+  },  
+  "dependencies": {
+      "Microsoft.Web.Infrastructure" : "1.0.0.0",
+      "SimpleInjector" : "3.3.0-beta5"
+  },
+  "frameworks" : {
+    "net451" : {
+      "dependencies": {
+          "Microsoft.AspNet.Mvc" : "3.0.20105.1",
+          "Microsoft.AspNet.Razor" : "1.0.20105.408",
+          "Microsoft.AspNet.WebPages" : "1.0.20105.408"
+      },
+       "frameworkAssemblies": {
+        "System.Data": "",
+        "System.Numerics": "",
+        "System.Runtime.Serialization": "",
+        "System.Xml": "",
+        "System.Xml.Linq": "",
+        "System.Data.Linq": "",
+        "System.Drawing": "",
+        "System.Management": "",
+        "Microsoft.CSharp": "",
+        "System.Configuration": "",
+        "System.Runtime.Caching": "",
+        "System.Web": "",
+        "System.Web.Routing": ""
+      }
+    }
+  }
+}
